@@ -25,7 +25,7 @@ export interface UserModel {
     createdAt: string,
 };
 
-export class user {
+export class User {
     constructor(
         private id: string,
         private name: string,
@@ -58,7 +58,7 @@ export class user {
     public setPassword(value: string): void {
         this.password = value
     };
-    public getRole(): string {
+    public getRole(): USER_ROLES {
         return this.role
     };
     public setRole(value: USER_ROLES): void {
