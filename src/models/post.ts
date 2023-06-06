@@ -8,6 +8,17 @@ export interface PostDB {
     updated_at: string
 };
 
+export interface PostAllDB{
+    id: string,
+    creator_id: string,
+    name: string,
+    likes: number,
+    dislikes: number,
+    created_at: string,
+    updated_at: string,
+    creator_name: string
+}
+
 export interface PostModel {
     id: string,
     name: string,
